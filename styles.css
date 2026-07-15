@@ -1273,7 +1273,7 @@ h1, h2, h3, h4 {
             drop-shadow(0 15px 30px rgba(15, 23, 42, 0.08)) 
             drop-shadow(0 4px 12px rgba(15, 23, 42, 0.03));
     border-radius: 8px;
-    image-rendering: -webkit-optimize-contrast;
+    /* image-rendering removed for smooth bi-cubic supersampling */
     will-change: transform;
 }
 
@@ -1759,7 +1759,7 @@ textarea.form-input {
             drop-shadow(0 15px 30px rgba(15, 23, 42, 0.08)) 
             drop-shadow(0 4px 12px rgba(15, 23, 42, 0.03));
     border-radius: 8px;
-    image-rendering: -webkit-optimize-contrast;
+    /* image-rendering removed for smooth bi-cubic supersampling */
     will-change: transform;
 }
     
@@ -3039,7 +3039,7 @@ html, body {
 img {
     max-width: 100%;
     height: auto;
-    image-rendering: -webkit-optimize-contrast;
+    /* image-rendering removed for smooth bi-cubic supersampling */
     image-rendering: crisp-edges;
 }
 
@@ -3085,6 +3085,10 @@ input, select, textarea {
     .section-padding { padding: 5rem 0; }
     .hero-title { font-size: clamp(2.4rem, 6vw, 3.2rem); }
     .hero-desc { font-size: 1rem; }
+    
+    #dna-bg-canvas, #particles-bg-canvas {
+        display: none !important;
+    }
     
     .hero-glow { width: 400px; height: 400px; top: -100px; left: -100px; }
     
@@ -3200,4 +3204,5 @@ input, select, textarea {
     .drawer-title { font-size: 1.8rem; }
     .hero-features-list li { font-size: 0.85rem; }
 }
+
 

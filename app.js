@@ -2,13 +2,20 @@
 // Visuals: Three.js WebGL particle engines & GSAP Scroll animation hooks
 
 document.addEventListener('DOMContentLoaded', () => {
+    const isMobile = window.innerWidth <= 768;
+    
     setActiveNavLink();
-    initDnaHelixHero();
-    initGlobalMoleculeBackground();
+    
+    // Only initialize heavy 3D elements if not on small mobile devices
+    if (!isMobile) {
+        initDnaHelixHero();
+        initGlobalMoleculeBackground();
+    }
+    
     initStatsCounters();
     initGSAPScrollAnimations();
     initUIUXEvents();
-    initProduct3DViewer();
+    initProduct3DViewer(); // Keeping product viewer as it's interactive, but we can optimize it inside if needed
     initProductFiltersAndSearch();
     initProductDrawer();
 });
@@ -39,7 +46,7 @@ window.addEventListener('load', () => {
 // ==========================================
 function initDnaHelixHero() {
     const container = document.getElementById('dna-bg-canvas');
-    if (!container) return;
+    if (!container || window.innerWidth <= 768) return;
 
     const scene = new THREE.Scene();
     
@@ -206,7 +213,7 @@ function initDnaHelixHero() {
 // ==========================================
 function initGlobalMoleculeBackground() {
     const container = document.getElementById('particles-bg-canvas');
-    if (!container) return;
+    if (!container || window.innerWidth <= 768) return;
 
     const scene = new THREE.Scene();
     
@@ -863,7 +870,7 @@ function initProduct3DViewer() {
                                 opacity: 1, 
                                 scale: photoData.scale * 0.725, 
                                 y: 0, 
-                                rotationY: 0, 
+                                rotationY: 0, force3D: true, z: 0.01, 
                                 duration: 0.8, 
                                 ease: 'back.out(1.4)',
                                 onComplete: () => {
@@ -880,7 +887,7 @@ function initProduct3DViewer() {
                 photoContainer.style.opacity = '1';
                 
                 // Instantly scale and float
-                gsap.set(customPhoto, { scale: photoData.scale * 0.725, x: 0, y: 0, rotationY: 0, opacity: 1 });
+                gsap.set(customPhoto, { scale: photoData.scale * 0.725, x: 0, y: 0, rotationY: 0, force3D: true, z: 0.01, opacity: 1 });
                 photoInner.classList.add('float-animation');
             }
         } else {
@@ -1704,6 +1711,7 @@ function populateDrawer(name, category, data) {
         });
     }
 }
+
 
 
 
