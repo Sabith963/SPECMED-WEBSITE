@@ -3040,7 +3040,7 @@ img {
     max-width: 100%;
     height: auto;
     /* image-rendering removed for smooth bi-cubic supersampling */
-    image-rendering: crisp-edges;
+    image-rendering: auto;
 }
 
 /* Touch targets optimization */
@@ -3204,5 +3204,6 @@ input, select, textarea {
     .drawer-title { font-size: 1.8rem; }
     .hero-features-list li { font-size: 0.85rem; }
 }
+
 
 
