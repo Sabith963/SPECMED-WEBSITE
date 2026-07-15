@@ -798,7 +798,8 @@ function initProduct3DViewer() {
         "TRYCRAN": { src: "product_image/TRYCRAN.png", scale: 1.29 },
         "UNE ORTHO GOLD GEL": { src: "product_image/UNE ORTHO GOLD GEL.png", scale: 1.33 },
         "UNE ORTHOGOLD TH GEL": { src: "product_image/UNE ORTHOGOLD TH GEL.png", scale: 1.33 },
-        "ZIIBIOTIC": { src: "product_image/ZIIBIOTIC.png", scale: 1.19 }
+        "ZIIBIOTIC": { src: "product_image/ZIIBIOTIC.png", scale: 1.19 },
+        "OSTEOTICK TABLET": { src: "product_image/OSTEOTICK TABLET.png", scale: 1.15 }
     };
 
     let currentProductName = "";
@@ -1703,6 +1704,7 @@ function populateDrawer(name, category, data) {
         });
     }
 }
+
 
 
 
