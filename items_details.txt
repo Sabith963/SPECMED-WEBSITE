@@ -1,0 +1,20 @@
+Item Name	Item actegory
+ALPHAMULTI	Genral
+COENZFIT Q10	Gyancology
+COLLAGMED SACHETS	Orthopedician
+COLLAGMED TOTAL	Orthopedician
+CYANOSURE DM	General
+CYANOSURE MOM	Gyancology
+CYANOSURE ORTHO	Orthopedician
+FEROSPEC	General
+HIO-MT	Gyancology
+MUCOSHIFA 600	General
+NUTRAFER	Gyancology
+OSTEOSPEC	Orthopedician
+OSTEOTICK TABLET	Orthopedician
+SPEC JOINT	Orthopedician
+SPECVITA  B12	General
+TRYCRAN	General
+UNE ORTHO GOLD GEL	Orthopedician
+UNE ORTHOGOLD TH GEL	Orthopedician
+ZIIBIOTIC	General

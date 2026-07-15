@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECMED Life Sciences | Pioneering Preventive Healthcare</title>
+    <meta name="description" content="SPECMED Life Sciences Private Limited is a fast-growing pharmaceutical company based in Bengaluru, India. Founded by surgeons, we deliver quality medicines and preventive nutraceuticals.">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background 3D effects canvases (visual enhancements behind text content) -->
+    <div id="particles-bg-canvas"></div>
+
+    <!-- Header / Navigation Bar -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <!-- Brand Identity -->
+                        <div class="brand">
+                <a href="index.html" class="logo-wrapper" style="text-decoration: none; color: inherit;">
+                    <!-- Clean display of updated SVG logo -->
+                    <img src="logo updated.svg" alt="SPECMED Life Sciences Logo">
+                </a>
+                <div class="brand-divider"></div>
+                <a href="https://www.trilife.in/" target="_blank" class="division-badge" style="text-decoration: none; color: inherit;">
+                    <span class="division-text">A Division of</span>
+                    <img src="trilife_logo.svg" alt="TriLife Hospital Logo" class="trilife-logo">
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="focus.html" class="nav-link">Our Focus</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Nav Toggle -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="shift-section section-padding" id="shift">
+            <div class="container shift-grid">
+                <!-- Left Column: NIN Research Box with Farm Background -->
+                <div class="shift-card nin-box-bg">
+                    <div class="nin-box-overlay"></div>
+                    <div class="nin-box-content">
+                        <div style="margin-bottom: 1.5rem;"><span class="badge">NIN RESEARCH FINDINGS</span></div>
+                        
+                        <h3 class="nin-box-title">3-4 Decades of Nutrient Decline</h3>
+                        
+                        <p class="nin-box-desc">National Institute of Nutrition (NIN) Hyderabad studies show soil toxicity has drastically reduced food nutrients over the past 30 to 40 years. This gap in daily food nutrition means reliance on diet alone is no longer enough to sustain optimal health.</p>
+                        
+                        <div class="nin-box-stats">
+                            <div class="box-stat">
+                                <div class="stat-num">-30%</div>
+                                <div class="stat-txt">Average reduction in critical vitamins and minerals across agricultural produce.</div>
+                            </div>
+                            <div class="box-stat">
+                                <div class="stat-num">40Y</div>
+                                <div class="stat-txt">Of continuous soil depletion resulting in less bio-available minerals in crops.</div>
+                            </div>
+                        </div>
+
+                        <div class="nin-box-chart-card">
+                            <div class="box-chart-header">ESSENTIAL SOIL NUTRIENT DEPLETION (NIN STUDY)</div>
+                            <div class="box-chart-bars">
+                                <div class="b-container">
+                                    <div class="b-fill b-100">100%</div>
+                                    <div class="b-label">30-40 YEARS AGO</div>
+                                </div>
+                                <div class="b-arrow">
+                                    <svg viewBox="0 0 100 80" width="100%" height="100%" style="overflow: visible;">
+                                        <defs>
+                                            <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                                                <polygon points="0,0 6,3 0,6" fill="#f58942" />
+                                            </marker>
+                                        </defs>
+                                        <path d="M 5,20 L 95,50" stroke="#f58942" stroke-width="2" stroke-dasharray="6,4" fill="none" marker-end="url(#arrowhead)" />
+                                        <text x="50" y="26" fill="#f58942" font-size="16" font-weight="800" text-anchor="middle" transform="rotate(18.4 50 35)">-30%</text>
+                                    </svg>
+                                </div>
+                                <div class="b-container b-outline">
+                                    <div class="b-fill b-70">70%</div>
+                                    <div class="b-label">TODAY</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column: The Science text -->
+                <div class="shift-content">
+                    <span class="badge">The Science</span>
+                    <h2>The Shift to<br><span class="text-orange">Preventive Therapy</span></h2>
+                    <p>Modern lifestyle disorders are rising rapidly due to nutritional gaps. Relying on curative medicine after diseases set in is not a sustainable path. Targeted nutraceutical supplements are now a biological necessity for healthy living, acting as a shield for cellular regeneration and tissue repair.</p>
+                    <p>At SPECMED, we design high-potency, science-backed formulas to bridge these critical nutritional gaps, moving the focus of therapy from post-disease management to active health preservation.</p>
+                    <div class="shift-highlight">
+                        "Bridge the nutrient gap. Preserve cell vitality before pathology begins."
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="segments-section section-padding" id="segments">
+            <div class="container">
+                <div class="segments-header">
+                    <span class="badge" style="border-color: rgba(255,107,0,0.4); color: var(--clr-orange-primary);">Therapeutic Integration</span>
+                    <h2>Our Core Therapeutic Focus</h2>
+                    <p>Discover how SPECMED nutraceutical solutions integrate with our primary clinical departments to support proactive care.</p>
+                </div>
+                <div class="segments-grid">
+                    <!-- Gynaecology Card -->
+                    <div class="segment-highlight-card segment-gynaec">
+                        <div class="segment-watermark">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 15v7M9 19h6"/></svg>
+                        </div>
+                        <div class="segment-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 15v7M9 19h6"/></svg>
+                        </div>
+                        <h3 class="segment-card-title">Gynaecology Portfolio</h3>
+                        <p class="segment-card-desc">Nutraceuticals are increasingly used in gynaecology to manage hormone imbalances, reduce chronic pelvic pain, and support reproductive health with fewer side effects than traditional pharmaceuticals. They offer a natural, evidence-based approach to prevent and treat women's health conditions.</p>
+                        <ul class="segment-points-list">
+                            <li class="segment-point-item">
+                                <span class="segment-point-bullet">&bull;</span>
+                                <span><strong>Hormonal Regulation:</strong> Supports endocrine balance and PCOS recovery.</span>
+                            </li>
+                            <li class="segment-point-item">
+                                <span class="segment-point-bullet">&bull;</span>
+                                <span><strong>Pelvic Pain Reduction:</strong> Helps naturally manage pelvic inflammation pathways.</span>
+                            </li>
+                            <li class="segment-point-item">
+                                <span class="segment-point-bullet">&bull;</span>
+                                <span><strong>Reproductive Health:</strong> Evidence-based support for maternity and general health.</span>
+                        <ul class="segment-points-list">
+
+
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Orthopaedics Card -->
+                    <div class="segment-highlight-card segment-ortho">
+                        <div class="segment-watermark">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c0 .28.22.5.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"/></svg>
+                        </div>
+                        <div class="segment-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c0 .28.22.5.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"/></svg>
+                        </div>
+
+
+                        <h3 class="segment-card-title">Orthopaedics Portfolio</h3>
+                        <p class="segment-card-desc">Nutraceuticals are used in orthopaedics to manage joint inflammation, accelerate post-surgical recovery, and support bone and cartilage health. They are increasingly used as complementary adjuncts alongside standard therapies due to their favorable safety profiles and preventative properties.</p>
+                        <ul class="segment-points-list">
+                            <li class="segment-point-item">
+                                <span class="segment-point-bullet">&bull;</span>
+                                <span><strong>Joint Inflammation:</strong> Reduces cartilage degradation and swelling.</span>
+                            </li>
+                            <li class="segment-point-item">
+                                <span class="segment-point-bullet">&bull;</span>
+                                <span><strong>Post-Surgical Healing:</strong> Accelerates bone union and tissue recovery.</span>
+                            </li>
+                            <li class="segment-point-item">
+                                <span class="segment-point-bullet">&bull;</span>
+                                <span><strong>Cartilage Strength:</strong> Stimulates collagen synthesis for long-term mobility.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+<section class="split-focus-section section-padding" id="split-focus">
+            <div class="container">
+                <!-- Column A: Nutraceutical Science -->
+                <div class="split-row">
+                    <div class="split-text-col">
+                        <span class="badge">Nutraceutical Science</span>
+                        <h2>Bridging Ancient Wisdom with<br><span class="text-orange">Modern Standard Extracts</span></h2>
+                        <p>Although the term "nutraceutical" was coined in the West in 1989, the foundational principles of using food and herbs for medicinal and physiological benefits originated in India thousands of years ago. The entire premise of using natural remedies, such as turmeric, ashwagandha, and cloves, to boost immunity aligns directly with modern nutraceutical practices.</p>
+                        <p>SPECMED Life Sciences bridges this gap. By utilizing modern pharmaceutical expertise, we adopt standards such as clinical validation, high-quality botanical extracts, and advanced dosage forms to deliver reliable, evidence-based preventive therapies.</p>
+                    </div>
+                    <div class="split-img-col">
+                        <div class="split-img-wrapper">
+                            <img src="herbal_biotech.png" alt="Nutraceutical Science - Ayurvedic Heritage and Modern Biotechnology">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column B: Medical Segments -->
+                <div class="split-row reverse">
+                    <div class="split-img-col">
+                        <div class="split-img-wrapper">
+                            <img src="targeted_prevention_pic.png" alt="Clinical Specialty Segments - Orthopaedics, Gynaecology, Critical Care">
+                        </div>
+                    </div>
+                    <div class="split-text-col">
+                        <span class="badge">Clinical Specialty Segments</span>
+                        <h2>Targeted Prevention for<br><span class="text-orange">Core Medical Segments</span></h2>
+                        <p>SPECMED Life Sciences Private Limited is a fast-growing pharmaceutical company based in India. We aim to positively impact the health of more people by the end of 2030 in the critical segments of <strong>Orthopaedics, Gynaecology, Critical Care, and General Medicine</strong>.</p>
+                        <p>Our formulations leverage advanced clinical research to manage joint inflammation, support bone and cartilage health, regulate hormone imbalances, reduce pelvic pain, and provide elemental amino-acid support in critical care, offering a natural, evidence-based approach to prevention and care.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Bottom -->
+    <footer class="footer-bottom">
+        <div class="container footer-bottom-container">
+            <div class="copyright">
+                <div>&copy; 2026 SPECMED Life Sciences Private Limited. All Rights Reserved.</div>
+                <div class="footer-division-info">
+                    <span>A Division of</span>
+                    <img src="trilife_logo.svg" alt="TriLife Hospital Logo" class="footer-trilife-logo">
+                </div>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="focus.html">Our Focus</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Product Scientific Details Drawer -->
+    <div class="product-drawer" id="product-drawer">
+        <div class="drawer-overlay" id="drawer-overlay"></div>
+        <div class="drawer-panel">
+            <button class="drawer-close" id="drawer-close" aria-label="Close Details">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+            <div class="drawer-body" id="drawer-body">
+                <!-- Dynamic Content Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Success Notification Overlay -->
+    <div id="successModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 10000; justify-content: center; align-items: center; backdrop-filter: blur(10px);">
+        <div style="background: var(--bg-glass); border: 1px solid var(--clr-orange); padding: 3rem; border-radius: var(--border-radius-md); max-width: 450px; text-align: center; box-shadow: 0 0 40px rgba(255,107,0,0.25);">
+            <div style="width: 70px; height: 70px; background: rgba(255, 107, 0, 0.1); border: 2px solid var(--clr-orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; color: var(--clr-orange); font-size: 2rem; font-weight: bold;">&#10004;</div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 0.8rem; color: var(--text-primary);">Inquiry Sent</h3>
+            <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6; margin-bottom: 2rem;">Thank you for reaching out. A SPECMED medical relations officer will respond to your inquiry within 24 business hours.</p>
+            <button onclick="closeModal()" class="btn-primary" style="padding: 0.8rem 2rem;">Close Window</button>
+        </div>
+    </div>
+
+    <!-- JS Libraries (Three.js, GSAP, ScrollTrigger, Lucide Icons) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
