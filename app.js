@@ -857,10 +857,10 @@ function initProduct3DViewer() {
 
                         photoInner.classList.remove('float-animation');
                         gsap.fromTo(customPhoto, 
-                            { opacity: 0, scale: (0.75 * photoData.scale) / 2, y: 30, rotationY: -15 }, 
+                            { opacity: 0, scale: 0.75 * photoData.scale * 0.725, y: 30, rotationY: -15 }, 
                             { 
                                 opacity: 1, 
-                                scale: photoData.scale / 2, 
+                                scale: photoData.scale * 0.725, 
                                 y: 0, 
                                 rotationY: 0, 
                                 duration: 0.8, 
@@ -879,7 +879,7 @@ function initProduct3DViewer() {
                 photoContainer.style.opacity = '1';
                 
                 // Instantly scale and float
-                gsap.set(customPhoto, { scale: photoData.scale / 2, x: 0, y: 0, rotationY: 0, opacity: 1 });
+                gsap.set(customPhoto, { scale: photoData.scale * 0.725, x: 0, y: 0, rotationY: 0, opacity: 1 });
                 photoInner.classList.add('float-animation');
             }
         } else {
@@ -1703,6 +1703,7 @@ function populateDrawer(name, category, data) {
         });
     }
 }
+
 
 
 
